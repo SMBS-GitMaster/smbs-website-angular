@@ -2,9 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
+    fontFamily: {
+      opensans: ['Open Sans', 'sans-serif'],
+    },
+
     extend: {
       colors: {
-        orange: "#F89B27",
+        primary: "#F89B27",
       }
     },
   },

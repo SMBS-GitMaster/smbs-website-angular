@@ -1,0 +1,28 @@
+@import "@styles";
+
+@layer components {
+  .hero {
+    @apply py-20 px-24;
+
+    &__container {
+      @apply mx-auto max-w-[1400px] w-full;
+    }
+
+    .wrapper {
+      @apply flex flex-col justify-center items-center gap-x-32;
+      @apply lg:flex-row lg:justify-between;
+    }
+
+    &__info {
+      @apply text-white max-w-[744px] w-full;
+    }
+
+    &__title {
+      @apply text-[54px] leading-[60px] font-bold mb-10 tracking-[1.5px];
+    }
+  }
+}
+
+.hero--bg {
+  background: linear-gradient(76deg, #00071e 60.21%, #1c243e 74.25%);
+}

@@ -1,7 +1,7 @@
 <button
   type="button"
-  class="bg-orange px-9 py-2 rounded-md text-white uppercase"
-  [class]="customClass"
+  class="btn"
+  [ngClass]="customStyles"
   (click)="onClickButton($event)"
 >
   <ng-content></ng-content>

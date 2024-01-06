@@ -1,0 +1,8 @@
+@import "@styles";
+
+@layer components {
+  .btn {
+    @apply bg-primary px-10 py-2 rounded-md text-white uppercase transition-all ease-out;
+    @apply lg:px-12 lg:py-3;
+  }
+}

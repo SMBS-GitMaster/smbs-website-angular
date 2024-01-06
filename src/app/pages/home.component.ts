@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import Header from '../components/header/header.component';
+import Hero from '@components/hero/hero.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, Header],
+  imports: [RouterModule, Hero],
   templateUrl: './home.component.html',
 })
 export default class HomePage {}
