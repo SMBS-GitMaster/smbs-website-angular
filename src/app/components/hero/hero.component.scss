@@ -2,23 +2,54 @@
 
 @layer components {
   .hero {
-    @apply py-20 px-24;
+    @apply py-9 px-10 transition-all;
+    @apply lg:py-12 lg:px-12;
+    @apply xl:py-16 xl:px-20;
+    @apply 2xl:py-20 2xl:px-24;
 
     &__container {
       @apply mx-auto max-w-[1400px] w-full;
     }
 
     .wrapper {
-      @apply flex flex-col justify-center items-center gap-x-32;
+      @apply flex flex-col justify-center items-start gap-x-32;
       @apply lg:flex-row lg:justify-between;
     }
 
     &__info {
-      @apply text-white max-w-[744px] w-full;
+      @apply text-white max-w-[744px] w-full mx-auto;
+      @apply lg:mx-0;
     }
 
     &__title {
-      @apply text-[54px] leading-[60px] font-bold mb-10 tracking-[1.5px];
+      @apply text-[32px] leading-tight font-bold mb-10 tracking-[1.5px] text-center text-balance;
+      @apply md:text-[35px] md:leading-[46px];
+      @apply lg:text-[38px] lg:leading-[46px] lg:tracking-[1.8px] lg:text-left lg:text-wrap;
+      @apply xl:text-[44.55px] xl:leading-[54px] xl:tracking-[1.8px];
+      @apply 2xl:text-[48px] 2xl:leading-[60px] 2xl:tracking-[1.6px];
+    }
+
+    &__subtitle {
+      @apply mb-10 text-3xl text-center;
+      @apply md:text-4xl;
+      @apply lg:text-[28px] lg:text-left;
+      @apply xl:text-4xl;
+      @apply 2xl:text-4xl;
+    }
+
+    &__description {
+      @apply text-xl mb-10 leading-7 text-center;
+      @apply lg:text-left;
+    }
+
+    &__intouch {
+      @apply flex justify-center items-center gap-x-14;
+      @apply lg:justify-start;
+    }
+
+    &__card {
+      @apply hidden;
+      @apply lg:block;
     }
   }
 }

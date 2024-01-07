@@ -3,10 +3,42 @@
 @layer components {
   .card-dev {
     @apply py-8 px-7 w-[390px];
+
+    .wrapper {
+      @apply text-white flex flex-col items-center;
+    }
+
+    &__heading {
+      @apply w-full flex flex-col items-center gap-y-5;
+
+      &--name {
+        @apply text-center text-gray-400 text-xl mb-6;
+      }
+
+      &--proffesion {
+        @apply block text-white font-bold text-base mt-1;
+      }
+    }
+
+    &__description {
+      @apply text-center font-normal pb-6 border-b-[1px] border-white/20 text-base;
+    }
+
+    &__skills {
+      @apply w-full;
+
+      &--text {
+        @apply uppercase mb-6;
+      }
+    }
   }
 }
 
 .card-dev--bg {
-  background: conic-gradient(from 37deg at 50% 50%, #192139 0deg, rgba(25, 33, 57, 0.00) 360deg);
+  background: conic-gradient(
+    from 37deg at 50% 50%,
+    #192139 0deg,
+    rgba(25, 33, 57, 0) 360deg
+  );
   box-shadow: 4px 3px 10px 0px rgba(0, 0, 0, 0.25);
 }

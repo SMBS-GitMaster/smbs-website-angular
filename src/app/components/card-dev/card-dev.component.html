@@ -1,35 +1,28 @@
 <article class="card-dev card-dev--bg">
-  <div class="text-white flex flex-col items-center">
-    <div class="w-full flex flex-col items-center gap-y-5">
-      <picture class="">
-        <img [src]="avatar" [alt]="'dev' + avatar" />
+  <div class="wrapper">
+    <div class="card-dev__heading">
+      <picture>
+        <img [src]="avatar" alt="developer image" />
       </picture>
 
-      <h3 class="text-center text-gray-400 text-xl mb-6">
+      <h3 class="card-dev__heading--name">
         {{ name }}
-        <span class="block text-white font-bold text-base mt-1">{{
-          proffesion
-        }}</span>
+        <span class="card-dev__heading--proffesion">{{ proffesion }}</span>
       </h3>
     </div>
 
-    <p
-      class="text-center font-normal pb-6 border-b-[1px] border-white/20 text-base"
-    >
+    <p class="card-dev__description">
       {{ description }}
     </p>
 
-    <app-button
-      class="my-6"
-      customClass="bg-transparent border border-white px-6 pt-2 pb-1 rounded-[10px] font-bold normal-case"
-    >
-      Engage
-    </app-button>
+    <app-button class="my-6" [customStyles]="buttonStyles"> Engage </app-button>
 
-    <div class="w-full">
-      <h4 class="uppercase mb-6">Skills:</h4>
+    <div class="card-dev__skills">
+      <h4 class="card-dev__skills--text">Skills:</h4>
 
-      {{ techSkills(skills) }}
+      <span class="card-dev__skills--list">
+        {{ techSkills(skills) }}
+      </span>
     </div>
   </div>
 </article>

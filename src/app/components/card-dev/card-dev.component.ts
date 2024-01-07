@@ -16,6 +16,9 @@ export default class CardDev {
   @Input() description = '';
   @Input() skills: string[] = [];
 
+  buttonStyles =
+    'bg-transparent border border-white px-6 pt-1 pb-2 rounded-xl font-bold normal-case';
+
   techSkills(skills: string[]): string {
     return skills.join(', ');
   }
