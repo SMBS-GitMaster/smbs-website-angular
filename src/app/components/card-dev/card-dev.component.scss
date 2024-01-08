@@ -4,7 +4,7 @@
   .card-dev {
     @apply py-8 px-7 w-[390px];
 
-    .wrapper {
+    &__wrapper {
       @apply text-white flex flex-col items-center;
     }
 
