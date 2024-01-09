@@ -46,11 +46,6 @@
       @apply flex justify-center items-center gap-x-14;
       @apply lg:justify-start;
     }
-
-    &__card {
-      @apply hidden;
-      @apply lg:block;
-    }
   }
 }
 

@@ -1,0 +1,18 @@
+<app-hero
+  [title]="hero.title!"
+  [subtitle]="hero.subtitle!"
+  [description]="hero.description!"
+  btnLabel="Get in Touch"
+  btnImg="assets/images/img-header.png"
+  btnClasses="px-10 font-bold py-[14px]"
+>
+  <div class="hero__card">
+    <app-card-dev
+      avatar="assets/images/card_dev_01.png"
+      name="John Doe"
+      proffesion="Front end developer"
+      description="Software Engineer with over 6 years of experience in Web development. I enjoy practicing photography."
+      [skills]="['JavaScript', 'ReactJs', 'HTML', 'CSS']"
+    />
+  </div>
+</app-hero>

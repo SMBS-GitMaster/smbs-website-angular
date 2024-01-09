@@ -2,35 +2,37 @@
   <div class="hero__container">
     <div class="hero__wrapper">
       <div class="hero__info">
-        <h2 class="hero__title">Boost your Software team with LATAM talent.</h2>
-        <h3 class="hero__subtitle">Staff augmentation made easy.</h3>
-
+        @if (title) {
+        <h2 class="hero__title">{{ title }}</h2>
+        } 
+        
+        @if (subtitle) {
+        <h3 class="hero__subtitle">{{ subtitle }}</h3>
+        } 
+        
+        @if (description) {
         <p class="hero__description">
-          Whether you need one developer or an entire team, we have the
-          expertise to find the right fit for your project. Plus, with our
-          flexible engagement models, you can choose the level of support that
-          works best for your needs.
+          {{ description }}
         </p>
-
+        } 
+        
+        @if (btnLabel) {
         <div class="hero__intouch">
-          <app-button customStyles="px-10 font-bold py-[14px]">
+          <app-button [customStyles]="btnClasses">
             Get in Touch
           </app-button>
+
+          @if (btnImg) {
           <picture>
-            <img src="assets/images/img-header.png" alt="Clutch Image" />
+            <img [src]="btnImg" alt="image" />
           </picture>
+          }
         </div>
+        }
       </div>
 
-      <div class="hero__card">
-        <app-card-dev
-          avatar="assets/images/card_dev_01.png"
-          name="John Doe"
-          proffesion="Front end developer"
-          description="Software Engineer with over 6 years of experience in Web development. I enjoy practicing photography."
-          [skills]="['JavaScript', 'ReactJs', 'HTML', 'CSS']"
-        ></app-card-dev>
-      </div>
+      <!-- THIS CONTENT WILL BE DISPLAYED IN THE RIGHT SIDE OF THE HERO COMPONENT -->
+      <ng-content />
     </div>
   </div>
 </section>

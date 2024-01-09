@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import CardDev from '@components/card-dev/card-dev.component';
 import Button from '@shared/components/button/button.component';
@@ -10,4 +10,12 @@ import Button from '@shared/components/button/button.component';
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
 })
-export default class Hero {}
+export default class Hero {
+  @Input() title = '';
+  @Input() subtitle = '';
+  @Input() description = '';
+  @Input() btnLabel = '';
+  @Input() btnImg = '';
+
+  @Input() btnClasses = '';
+}
