@@ -16,3 +16,21 @@
     />
   </div>
 </app-hero>
+
+<div class="content">
+  <div class="content__container">
+    <div class="content__wrapper">
+      <app-info-section customClass="section__stack" title="Our Stack">
+        <ul class="section__stack--list">
+          @for (img of images; track $index) {
+          <li class="">
+            <picture>
+              <img [src]="img.src" [alt]="'stack ' + img.name" />
+            </picture>
+          </li>
+          }
+        </ul>
+      </app-info-section>
+    </div>
+  </div>
+</div>

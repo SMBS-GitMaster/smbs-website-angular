@@ -1,0 +1,9 @@
+@import "@styles";
+
+@layer components {
+  .section {
+    &__title {
+      @apply text-primary text-[50px] font-bold uppercase mb-[25px];
+    }
+  }
+}

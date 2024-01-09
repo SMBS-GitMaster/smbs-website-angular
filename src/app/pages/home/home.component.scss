@@ -7,4 +7,32 @@
       @apply lg:block;
     }
   }
+
+  .content {
+    @apply py-[50px] px-10;
+    @apply lg:px-12;
+    @apply xl:px-20;
+    @apply 2xl:px-24;
+
+    &__container {
+      @apply max-w-[1400px] w-full mx-auto;
+    }
+
+    &__wrapper {
+      @apply flex flex-col gap-y-[60px];
+    }
+  }
+
+  .section {
+    &__stack {
+      &--description {
+        @apply text-3xl;
+      }
+
+      &--list {
+        @apply flex items-center justify-evenly gap-x-[45px] gap-y-10 flex-wrap px-12;
+        @apply lg:px-10;
+      }
+    }
+  }
 }
