@@ -5,6 +5,7 @@ import CardDev from '@components/card-dev/card-dev.component';
 import Hero from '@components/hero/hero.component';
 import InfoSectionComponent from '@components/info-section/info-section.component';
 import { Card } from '@components/card/card.component';
+import { ImageSlides } from '@interfaces/ImageSlides';
 
 @Component({
   standalone: true,
@@ -22,7 +23,7 @@ export default class HomePage {
           works best for your needs.`,
   };
 
-  images = [
+  stackImages: ImageSlides[] = [
     {
       name: 'C#',
       src: 'assets/images/c_sharp.png',
@@ -58,6 +59,29 @@ export default class HomePage {
     {
       name: 'Node',
       src: 'assets/images/nodejs.png',
+    },
+  ];
+
+  clientsImages: ImageSlides[] = [
+    {
+      name: 'Identty',
+      src: 'assets/images/identty.png',
+    },
+    {
+      name: 'baum digital',
+      src: 'assets/images/baum.png',
+    },
+    {
+      name: 'Applaudo',
+      src: 'assets/images/applaudo.png',
+    },
+    {
+      name: 'Bloom Growth',
+      src: 'assets/images/bloom.png',
+    },
+    {
+      name: 'Walmart',
+      src: 'assets/images/walmart.png',
     },
   ];
 }

@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, booleanAttribute } from '@angular/core';
+import { ImageSlides } from '@interfaces/ImageSlides';
+// import { NgxMarqueeComponent, NgxMarqueeModule } from 'ngx-marquee';
 
 @Component({
   selector: 'app-info-section',
@@ -11,4 +13,6 @@ import { Component, Input } from '@angular/core';
 export default class InfoSectionComponent {
   @Input() customClass = '';
   @Input() title = '';
+  @Input() images: ImageSlides[] = [];
+  @Input({ transform: booleanAttribute }) isMarquee = false;
 }
