@@ -3,7 +3,8 @@
 @layer components {
   .section {
     &__title {
-      @apply text-primary text-[50px] font-bold uppercase mb-[25px];
+      @apply text-primary text-[46px] font-bold uppercase mb-[25px] text-center;
+      @apply lg:text-left;
     }
   }
 }

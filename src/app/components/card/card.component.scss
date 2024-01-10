@@ -1,0 +1,26 @@
+@import "@styles";
+
+@layer components {
+  .card {
+    &__wrapper {
+      @apply flex flex-col justify-between items-center gap-y-6 px-[36px];
+    }
+
+    &__head {
+      @apply flex flex-col items-center justify-center gap-y-6;
+    }
+
+    &__title {
+      @apply text-3xl font-bold;
+    }
+
+    &.section__services__articles__item {
+      .card__body {
+        @apply h-auto;
+        @apply lg:h-[240px];
+        @apply xl:h-[200px];
+        @apply 2xl:h-[180px];
+      }
+    }
+  }
+}

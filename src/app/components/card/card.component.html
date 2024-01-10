@@ -1,0 +1,31 @@
+<article class="card" [class]="customClass">
+  <div class="card__container">
+    <div class="card__wrapper">
+      @if (title || img) {
+      <header class="card__head">
+        @if (img) {
+        <figure class="card__img">
+          <img [src]="img" [alt]="'image ' + title" />
+        </figure>
+        } @if (title) {
+        <h3 class="card__title">{{ title }}</h3>
+        }
+      </header>
+      }
+
+      <div class="card__body">
+        <ng-content select="[body]"></ng-content>
+      </div>
+
+      <footer class="card__footer">
+        @if (btnLabel) {
+        <app-button [customStyles]="btnClasses">
+          {{ btnLabel }}
+        </app-button>
+        }
+
+        <ng-content select="[footer]"></ng-content>
+      </footer>
+    </div>
+  </div>
+</article>

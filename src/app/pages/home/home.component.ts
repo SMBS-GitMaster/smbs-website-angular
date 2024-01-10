@@ -4,10 +4,11 @@ import { RouterModule } from '@angular/router';
 import CardDev from '@components/card-dev/card-dev.component';
 import Hero from '@components/hero/hero.component';
 import InfoSectionComponent from '@components/info-section/info-section.component';
+import { Card } from '@components/card/card.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, Hero, CardDev, InfoSectionComponent],
+  imports: [RouterModule, Hero, CardDev, InfoSectionComponent, Card],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
