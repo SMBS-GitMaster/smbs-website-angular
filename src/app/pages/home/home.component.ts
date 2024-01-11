@@ -87,4 +87,39 @@ export default class HomePage {
 
   clientListStyles =
     'flex items-center justify-center gap-x-[45px] gap-y-10 flex-wrap lg:flex-nowrap lg:justify-between';
+
+  ourModelList = [
+    {
+      icon: 'assets/images/selection.png',
+      text: 'Recruiting, screening, and Selection',
+    },
+    {
+      icon: 'assets/images/pay.png',
+      text: ' HR and payroll',
+    },
+    {
+      icon: 'assets/images/pay.png',
+      text: 'HR and payroll',
+    },
+    {
+      icon: 'assets/images/performance.png',
+      text: 'Performance management',
+    },
+    {
+      icon: 'assets/images/training.png',
+      text: 'Training and Development',
+    },
+    {
+      icon: 'assets/images/doc.png',
+      text: 'Legal Compliance',
+    },
+    {
+      icon: 'assets/images/employees.png',
+      text: 'Employee Engagement',
+    },
+  ];
+
+  getIconName(url: string) {
+    return url.split('/')[url.split('/').length - 1].split('.')[0];
+  }
 }

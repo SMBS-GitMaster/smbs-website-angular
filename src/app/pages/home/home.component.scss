@@ -63,5 +63,62 @@
         }
       }
     }
+
+    &__model {
+      @apply w-full relative;
+
+      &--text {
+        @apply col-span-2 text-center font-semibold text-lg leading-7;
+        @apply lg:text-xl lg:leading-8;
+      }
+
+      &__wrapper {
+        @apply grid grid-cols-1 gap-y-10 place-items-center;
+        @apply md:place-items-start;
+        @apply lg:grid-cols-2 lg:place-items-start;
+      }
+
+      &__description {
+        @apply max-w-[636px] w-full col-span-2;
+        @apply md:mx-auto;
+        @apply lg:col-span-1 lg:m-0;
+
+        h5 {
+          @apply text-[24px] font-bold leading-9 mb-4  text-center;
+          @apply lg:text-left lg:text-[30px] lg:mb-9;
+        }
+
+        p {
+          @apply text-lg text-center;
+          @apply lg:text-xl lg:leading-[30px] lg:text-left;
+        }
+      }
+
+      &__phases {
+        @apply max-w-[638px] flex flex-col mx-auto items-center gap-y-5;
+        @apply md:flex-row md:justify-between md:gap-x-16;
+        @apply lg:flex-col lg:items-start;
+
+        &--text {
+          @apply text-lg;
+          @apply md:w-2/5;
+          @apply lg:text-xl lg:leading-[30px] lg:w-full;
+        }
+
+        &__list {
+          @apply flex-1;
+          @apply lg:pl-6 lg:pt-5;
+
+          &--item {
+            @apply flex items-center gap-x-4 mb-3;
+          }
+
+          &--text {
+            @apply font-semibold text-[16px];
+            @apply lg:text-[18px];
+          }
+        }
+      }
+    }
   }
 }

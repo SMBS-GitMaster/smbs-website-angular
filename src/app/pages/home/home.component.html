@@ -86,6 +86,57 @@
         [listStyles]="clientListStyles"
       >
       </app-info-section>
+
+      <app-info-section
+        customClass="section__model"
+        title="let us handle the rest"
+      >
+        <div class="section__model__wrapper">
+          <div class="section__model__description">
+            <h5>
+              Our model is specifically crafted to simplify your life, so you
+              can focus solely on developing your software product.
+            </h5>
+
+            <p>
+              We take care of everything else, ensuring that your team has the
+              necessary support and resources to successfully complete your
+              projects. With us as your partner, you can rest easy knowing that
+              we’ve got your back and are committed to helping you achieve your
+              business goals.
+            </p>
+          </div>
+
+          <div class="section__model__phases">
+            <p class="section__model__phases--text">
+              When you hire our staff augmentation service, we take on a range
+              of responsibilities, including:
+            </p>
+
+            <ul class="section__model__phases__list">
+              @for (item of ourModelList; track $index) {
+              <li class="section__model__phases__list--item">
+                <img
+                  class="w-6 h-6"
+                  [src]="item.icon"
+                  [alt]="getIconName(item.icon)"
+                />
+                <span class="section__model__phases__list--text">{{
+                  item.text
+                }}</span>
+              </li>
+              }
+            </ul>
+          </div>
+
+          <p class="section__model--text">
+            By ensuring that your staff augmentation service provider is
+            responsible for these key areas, you can rest assured that you are
+            getting the best possible value for your investment, and that you
+            are well-positioned to achieve your business goals.
+          </p>
+        </div>
+      </app-info-section>
     </div>
   </div>
 </div>
