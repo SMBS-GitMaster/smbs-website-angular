@@ -6,55 +6,5 @@
       @apply text-primary text-[46px] font-bold uppercase mb-[25px] text-center;
       @apply lg:text-left;
     }
-
-    &__stack {
-      &--list {
-        @apply flex items-center justify-evenly gap-x-[45px] gap-y-10 flex-wrap px-12;
-        @apply lg:px-10;
-      }
-    }
-
-    &__client {
-      &--list {
-        @apply flex items-center justify-center gap-x-[45px] gap-y-10 flex-wrap;
-        @apply lg:flex-nowrap lg:justify-start;
-      }
-    }
-  }
-}
-
-.marquee {
-  overflow: hidden;
-
-  &-content {
-    display: flex;
-    animation: scrolling 12s linear infinite;
-  }
-
-  &-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 10rem;
-    margin: 0 1vw;
-
-    picture {
-      display: block;
-      width: 100%;
-    }
-
-    &--duplicate {
-      display: none;
-    }
-  }
-}
-
-@keyframes scrolling {
-  0% {
-    transform: translateX(0vw);
-  }
-  100% {
-    // transform: translatex(-164.8vw);
-    transform: translatex(-146.4vw);
   }
 }

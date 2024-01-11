@@ -86,5 +86,5 @@ export default class HomePage {
   ];
 
   clientListStyles =
-    'flex items-center justify-center gap-x-[45px] gap-y-10 flex-wrap lg:flex-nowrap lg:justify-start';
+    'flex items-center justify-center gap-x-[45px] gap-y-10 flex-wrap lg:flex-nowrap lg:justify-between';
 }

@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, booleanAttribute } from '@angular/core';
+import { MarqueeComponent } from '@components/marquee/marquee.component';
 import { ImageSlides } from '@interfaces/ImageSlides';
-// import { NgxMarqueeComponent, NgxMarqueeModule } from 'ngx-marquee';
 
 @Component({
   selector: 'app-info-section',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MarqueeComponent],
   templateUrl: './info-section.component.html',
   styleUrl: './info-section.component.scss',
 })
