@@ -15,4 +15,6 @@ export default class InfoSectionComponent {
   @Input() title = '';
   @Input() images: ImageSlides[] = [];
   @Input({ transform: booleanAttribute }) isMarquee = false;
+
+  @Input() listStyles = '';
 }

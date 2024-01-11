@@ -28,13 +28,14 @@
 
   &-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: scrolling 10s linear infinite;
+    animation: scrolling 12s linear infinite;
   }
 
   &-item {
-    flex: 0 0 14vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 10rem;
     margin: 0 1vw;
 
     picture {

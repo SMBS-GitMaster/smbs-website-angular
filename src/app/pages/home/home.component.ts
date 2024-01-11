@@ -84,4 +84,7 @@ export default class HomePage {
       src: 'assets/images/walmart.png',
     },
   ];
+
+  clientListStyles =
+    'flex items-center justify-center gap-x-[45px] gap-y-10 flex-wrap lg:flex-nowrap lg:justify-start';
 }

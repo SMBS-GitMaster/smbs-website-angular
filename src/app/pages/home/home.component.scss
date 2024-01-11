@@ -72,7 +72,7 @@
     }
 
     &__client {
-      &--list {
+      &__list {
         @apply flex items-center justify-center gap-x-[45px] gap-y-10 flex-wrap;
         @apply lg:flex-nowrap lg:justify-start;
       }

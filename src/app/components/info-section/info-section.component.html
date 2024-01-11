@@ -2,18 +2,6 @@
   <h2 class="section__title">{{ title }}</h2>
 
   @if (images && isMarquee){
-  <!-- <div class="marquee">
-    <ul class="marquee-content" [class]="customClass + '--list'">
-      @for (img of images; track $index) {
-      <li class="marquee-item">
-        <picture class="w-28">
-          <img [src]="img.src" [alt]="'stack ' + img.name" />
-        </picture>
-      </li>
-      }
-    </ul>
-  </div> -->
-
   <div class="marquee">
     <div class="marquee-content">
       @for (item of images; track $index) {
@@ -31,9 +19,9 @@
   </div>
 
   } @else {
-  <ul [class]="customClass + '--list'">
+  <ul [class]="listStyles">
     @for (img of images; track $index) {
-    <li [class]="customClass + '--item'">
+    <li>
       <picture>
         <img [src]="img.src" [alt]="'stack ' + img.name" />
       </picture>
