@@ -22,5 +22,19 @@
         @apply 2xl:h-[180px];
       }
     }
+
+    &.section__skillset__card {
+      @apply h-auto w-full;
+
+      .card__wrapper {
+        @apply p-0;
+      }
+
+      .card__body {
+        &__description {
+          @apply text-lg;
+        }
+      }
+    }
   }
 }

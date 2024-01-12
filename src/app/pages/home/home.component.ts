@@ -1,11 +1,12 @@
+import { Card } from '@components/card/card.component';
 import { Component } from '@angular/core';
+import { getIconName } from '@utils/common-functions';
 import { HeroPage } from '@interfaces/HeroPage';
+import { ImageSlides } from '@interfaces/ImageSlides';
 import { RouterModule } from '@angular/router';
 import CardDev from '@components/card-dev/card-dev.component';
 import Hero from '@components/hero/hero.component';
 import InfoSectionComponent from '@components/info-section/info-section.component';
-import { Card } from '@components/card/card.component';
-import { ImageSlides } from '@interfaces/ImageSlides';
 
 @Component({
   standalone: true,
@@ -119,7 +120,22 @@ export default class HomePage {
     },
   ];
 
-  getIconName(url: string) {
-    return url.split('/')[url.split('/').length - 1].split('.')[0];
+  skillsetList = [
+    {
+      icon: 'assets/images/calendar_icon.png',
+      text: 'Assess talent suitability within a two-week trial',
+    },
+    {
+      icon: 'assets/images/lock_icon.png',
+      text: 'Quickly secure an alternative candidate if the initial choice doesn’t meet your expectations',
+    },
+    {
+      icon: 'assets/images/no_money_icon.png',
+      text: 'No Hire, No Payment!',
+    },
+  ];
+
+  public get iconName(): (icon: string) => string {
+    return getIconName;
   }
 }

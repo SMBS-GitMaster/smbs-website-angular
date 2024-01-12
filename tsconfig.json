@@ -25,7 +25,8 @@
       "@layout/*": ["app/layout/*"],
       "@pages/*": ["app/pages/*"],
       "@shared/*": ["app/shared/*"],
-      "@styles": ["styles.scss"]
+      "@styles": ["styles.scss"],
+      "@utils/*": ["app/utils/*"]
     },
     "useDefineForClassFields": false,
     "lib": ["ES2022", "dom"]

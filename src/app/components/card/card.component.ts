@@ -1,5 +1,6 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { getIconName } from '@utils/common-functions';
 import Button from '@shared/components/button/button.component';
 
 @Component({
@@ -12,8 +13,13 @@ import Button from '@shared/components/button/button.component';
 })
 export class Card {
   @Input() title = '';
+  @Input() description = '';
   @Input() img = '';
   @Input() btnLabel = '';
   @Input() btnClasses = '';
   @Input() customClass = '';
+
+  public get iconName(): string {
+    return getIconName(this.img);
+  }
 }

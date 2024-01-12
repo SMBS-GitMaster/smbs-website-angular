@@ -119,7 +119,7 @@
                 <img
                   class="w-6 h-6"
                   [src]="item.icon"
-                  [alt]="getIconName(item.icon)"
+                  [alt]="iconName(item.icon)"
                 />
                 <span class="section__model__phases__list--text">{{
                   item.text
@@ -135,6 +135,31 @@
             getting the best possible value for your investment, and that you
             are well-positioned to achieve your business goals.
           </p>
+        </div>
+      </app-info-section>
+
+      <app-info-section
+        customClass="section__skillset"
+        title="TEST THE SKILLSET FIRST, THEN HIRE"
+      >
+        <div class="section__skillset__wrapper">
+          <div class="section__skillset__description">
+            <p>
+              Our success rate for converting trials into hires stands at an
+              impressive 98%
+            </p>
+          </div>
+          <ul class="section__skillset__list">
+            @for (item of skillsetList; track $index) {
+            <li class="section__skillset__list--item">
+              <app-card
+                [img]="item.icon"
+                [description]="item.text"
+                customClass="section__skillset__card"
+              />
+            </li>
+            }
+          </ul>
         </div>
       </app-info-section>
     </div>

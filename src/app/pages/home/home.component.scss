@@ -120,5 +120,25 @@
         }
       }
     }
+
+    &__skillset {
+      @apply w-full relative;
+
+      &__description {
+        p {
+          @apply text-2xl font-bold mb-10;
+          @apply lg:text-3xl;
+        }
+      }
+
+      &__list {
+        @apply flex flex-col justify-center items-center gap-y-6;
+        @apply lg:flex-row lg:gap-y-0 lg:gap-x-6 lg:justify-start;
+
+        &--item {
+          @apply max-w-[415px] w-full;
+        }
+      }
+    }
   }
 }
