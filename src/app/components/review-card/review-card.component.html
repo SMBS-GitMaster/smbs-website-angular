@@ -2,11 +2,11 @@
   <div class="card__container">
     <div class="card__wrapper">
       @if(logo){
-      <div class="card__head">
+      <header class="card__head">
         <figure class="card__img">
           <img [src]="logo" [alt]="reviewer ? 'image ' + reviewer : iconName" />
         </figure>
-      </div>
+      </header>
       } @else {
       <ng-content select="[head]"></ng-content>
       } @if(description){
@@ -19,7 +19,7 @@
       <ng-content select="[body]"></ng-content>
       }
 
-      <div class="card__footer">
+      <footer class="card__footer">
         <div class="card__footer__wrapper">
           @if(reviewerLogo){
           <figure class="card__footer--img">
@@ -33,7 +33,7 @@
           <ng-content select="[footer]"></ng-content>
           }
         </div>
-      </div>
+      </footer>
     </div>
   </div>
 </article>
