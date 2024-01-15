@@ -162,6 +162,34 @@
           </ul>
         </div>
       </app-info-section>
+
+      <app-info-section customClass="section__reviews" title="Reviews">
+        <div class="section__reviews__container">
+          <div class="section__reviews__wrapper">
+            <div class="section__reviews__description">
+              <p>Insights and Ideas</p>
+              <span
+                >We take care of everything else, ensuring that your team has
+                the necessary support and resources to successfully complete
+                your projects.</span
+              >
+            </div>
+            <ul class="section__reviews__list">
+              @for (item of reviewsList; track $index) {
+              <li class="section__reviews__list--item">
+                <app-review-card
+                  [logo]="item.logo"
+                  [description]="item.description"
+                  [reviewer]="item.reviewer"
+                  [reviewerTitle]="item.reviewerTitle"
+                  [reviewerLogo]="item.reviewerLogo"
+                />
+              </li>
+              }
+            </ul>
+          </div>
+        </div>
+      </app-info-section>
     </div>
   </div>
 </div>

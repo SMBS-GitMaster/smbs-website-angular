@@ -3,7 +3,7 @@
 
   @if (images && isMarquee){
   <app-marquee [images]="images" />
-  } @else {
+  } @if(images.length) {
   <ul [class]="listStyles">
     @for (img of images; track $index) {
     <li>
