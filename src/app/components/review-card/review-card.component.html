@@ -1,0 +1,39 @@
+<article class="card" [class]="customClass">
+  <div class="card__container">
+    <div class="card__wrapper">
+      @if(logo){
+      <div class="card__head">
+        <figure class="card__img">
+          <img [src]="logo" [alt]="reviewer ? 'image ' + reviewer : iconName" />
+        </figure>
+      </div>
+      } @else {
+      <ng-content select="[head]"></ng-content>
+      } @if(description){
+      <div class="card__body">
+        <p class="card__body--description">{{ description }}</p>
+        <p class="card__body--reviewer">{{ reviewer }}</p>
+        <p class="card__body--reviewer-title">{{ reviewerTitle }}</p>
+      </div>
+      } @else {
+      <ng-content select="[body]"></ng-content>
+      }
+
+      <div class="card__footer">
+        <div class="card__footer__wrapper">
+          @if(reviewerLogo){
+          <figure class="card__footer--img">
+            <img [src]="reviewerLogo" [alt]="reviewer" />
+          </figure>
+          <figure class="card__footer--rating">
+            <!-- <img [src]="reviewerLogo" [alt]="'logo' + reviewer" /> -->
+            <img src="assets/images/review_stars.png" alt="rating image" />
+          </figure>
+          } @else {
+          <ng-content select="[footer]"></ng-content>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

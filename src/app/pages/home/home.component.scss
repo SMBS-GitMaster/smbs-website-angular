@@ -140,5 +140,29 @@
         }
       }
     }
+
+    &__reviews {
+      @apply w-full relative;
+
+      &__description {
+        @apply mb-8 leading-6;
+
+        p {
+          @apply font-bold text-3xl mb-8;
+        }
+
+        span {
+          @apply text-[18px];
+        }
+      }
+
+      &__list {
+        @apply flex justify-start items-center gap-x-6;
+
+        &--item {
+          @apply w-[416px];
+        }
+      }
+    }
   }
 }

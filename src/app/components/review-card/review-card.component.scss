@@ -1,0 +1,30 @@
+@import "@styles";
+
+@layer components {
+  .card {
+    @apply max-w-[416px] w-full bg-gray-light  px-12 py-[50px];
+
+    &__wrapper {
+      @apply flex flex-col gap-y-10;
+    }
+
+    &__head {
+    }
+
+    &__body {
+      &--description {
+        @apply mb-10;
+      }
+
+      &--reviewer {
+        @apply font-semibold text-[18px] leading-6;
+      }
+    }
+
+    &__footer {
+      &__wrapper {
+        @apply flex justify-start items-center gap-x-4;
+      }
+    }
+  }
+}

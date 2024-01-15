@@ -7,10 +7,18 @@ import { RouterModule } from '@angular/router';
 import CardDev from '@components/card-dev/card-dev.component';
 import Hero from '@components/hero/hero.component';
 import InfoSectionComponent from '@components/info-section/info-section.component';
+import { ReviewCard } from '@components/review-card/review-card.component';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, Hero, CardDev, InfoSectionComponent, Card],
+  imports: [
+    Card,
+    CardDev,
+    Hero,
+    InfoSectionComponent,
+    ReviewCard,
+    RouterModule,
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
@@ -132,6 +140,33 @@ export default class HomePage {
     {
       icon: 'assets/images/no_money_icon.png',
       text: 'No Hire, No Payment!',
+    },
+  ];
+
+  reviewsList = [
+    {
+      logo: 'assets/images/review_logo.png',
+      description:
+        '“We found great value in their technical and communication skills.”',
+      reviewer: 'Vinicio Barrantes',
+      reviewerTitle: 'Productions Director at Baum Digital',
+      reviewerLogo: 'assets/images/reviewer_logo.png',
+    },
+    {
+      logo: 'assets/images/review_logo.png',
+      description:
+        '“We found great value in their technical and communication skills.”',
+      reviewer: 'Vinicio Barrantes',
+      reviewerTitle: 'Productions Director at Baum Digital',
+      reviewerLogo: 'assets/images/reviewer_logo.png',
+    },
+    {
+      logo: 'assets/images/review_logo.png',
+      description:
+        '“We found great value in their technical and communication skills.”',
+      reviewer: 'Vinicio Barrantes',
+      reviewerTitle: 'Productions Director at Baum Digital',
+      reviewerLogo: 'assets/images/reviewer_logo.png',
     },
   ];
 

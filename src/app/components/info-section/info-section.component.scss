@@ -8,7 +8,13 @@
     }
 
     &__skillset {
-      @apply mb-16;
+      @apply mb-4;
+    }
+
+    &__reviews {
+      h2 {
+        @apply mb-11;
+      }
     }
   }
 }
