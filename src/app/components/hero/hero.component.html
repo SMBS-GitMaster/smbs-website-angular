@@ -2,25 +2,17 @@
   <div class="hero__container">
     <div class="hero__wrapper">
       <div class="hero__info">
-        @if (title) {
         <h2 class="hero__title">{{ title }}</h2>
-        } 
-        
-        @if (subtitle) {
+
         <h3 class="hero__subtitle">{{ subtitle }}</h3>
-        } 
-        
-        @if (description) {
+
         <p class="hero__description">
           {{ description }}
         </p>
-        } 
-        
+
         @if (btnLabel) {
         <div class="hero__intouch">
-          <app-button [customStyles]="btnClasses">
-            Get in Touch
-          </app-button>
+          <app-button [customStyles]="btnClasses"> {{ btnLabel }}</app-button>
 
           @if (btnImg) {
           <picture>
