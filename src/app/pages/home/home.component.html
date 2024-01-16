@@ -163,7 +163,7 @@
         </div>
       </app-info-section>
 
-      <app-info-section customClass="section__reviews" title="Reviews">
+      <app-info-section customClass="section__reviews relative" title="Reviews">
         <div class="section__reviews__container">
           <div class="section__reviews__wrapper">
             <div class="section__reviews__description">
@@ -174,19 +174,12 @@
                 your projects.</span
               >
             </div>
-            <ul class="section__reviews__list">
-              @for (item of reviewsList; track $index) {
-              <li class="section__reviews__list--item">
-                <app-review-card
-                  [logo]="item.logo"
-                  [description]="item.description"
-                  [reviewer]="item.reviewer"
-                  [reviewerTitle]="item.reviewerTitle"
-                  [reviewerLogo]="item.reviewerLogo"
-                />
-              </li>
-              }
-            </ul>
+
+            <app-carousel
+              [cards]="reviewsList"
+              forReviewsList
+              [owlOptions]="owlOptions"
+            />
           </div>
         </div>
       </app-info-section>

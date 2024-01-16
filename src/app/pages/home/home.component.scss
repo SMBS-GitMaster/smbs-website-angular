@@ -15,7 +15,7 @@
     @apply 2xl:px-24;
 
     &__container {
-      @apply max-w-[1400px] w-full mx-auto;
+      @apply max-w-[1280px] w-full mx-auto;
     }
 
     &__wrapper {
@@ -156,13 +156,13 @@
         }
       }
 
-      &__list {
-        @apply flex justify-start items-center gap-x-6;
+      // &__list {
+      //   @apply flex justify-start items-center gap-x-6;
 
-        &--item {
-          @apply w-[416px];
-        }
-      }
+      //   &--item {
+      //     @apply w-[416px];
+      //   }
+      // }
     }
   }
 }
