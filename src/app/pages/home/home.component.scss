@@ -3,8 +3,8 @@
 @layer components {
   .hero {
     &__card {
-      @apply hidden;
       @apply lg:block;
+      @apply hidden;
     }
   }
 }
