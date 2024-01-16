@@ -1,0 +1,41 @@
+@import "@styles";
+
+@layer components {
+  .header {
+    @apply py-3 px-10 transition-all;
+    @apply lg:px-12;
+    @apply xl:px-20;
+    @apply 2xl:px-24;
+
+    &__container {
+      @apply mx-auto max-w-[1400px] w-full;
+    }
+
+    &__logo {
+      @apply w-44 inline-block;
+    }
+
+    &__wrapper {
+      @apply flex justify-between items-center;
+    }
+
+    &__menu {
+      @apply hidden;
+      @apply lg:flex lg:gap-x-14;
+
+      &--list {
+        @apply flex items-center gap-x-14;
+      }
+
+      &--item {
+        @apply font-semibold;
+      }
+    }
+
+    &__button {
+      &--text {
+        @apply font-bold text-[16px] tracking-[1.4px];
+      }
+    }
+  }
+}

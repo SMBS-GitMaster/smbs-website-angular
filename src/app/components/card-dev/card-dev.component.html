@@ -1,0 +1,28 @@
+<article class="card-dev card-dev--bg">
+  <div class="card-dev__wrapper">
+    <div class="card-dev__heading">
+      <picture>
+        <img [src]="avatar" alt="developer image" />
+      </picture>
+
+      <h3 class="card-dev__heading--name">
+        {{ name }}
+        <span class="card-dev__heading--proffesion">{{ proffesion }}</span>
+      </h3>
+    </div>
+
+    <p class="card-dev__description">
+      {{ description }}
+    </p>
+
+    <app-button class="my-6" [customStyles]="buttonStyles"> Engage </app-button>
+
+    <div class="card-dev__skills">
+      <h4 class="card-dev__skills--text">Skills:</h4>
+
+      <span class="card-dev__skills--list">
+        {{ techSkills(skills) }}
+      </span>
+    </div>
+  </div>
+</article>
