@@ -1,0 +1,16 @@
+<owl-carousel-o [options]="customOptions()">
+  @for (item of cards; track $index) { 
+    @if (forReviewsList) {
+    <ng-template carouselSlide>
+      <app-review-card
+        [id]="$index"
+        [logo]="item.logo"
+        [description]="item.description"
+        [reviewer]="item.reviewer"
+        [reviewerTitle]="item.reviewerTitle"
+        [reviewerLogo]="item.reviewerLogo"
+      />
+    </ng-template>
+    }
+  }
+</owl-carousel-o>

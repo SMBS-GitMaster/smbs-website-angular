@@ -8,6 +8,8 @@ import CardDev from '@components/card-dev/card-dev.component';
 import Hero from '@components/hero/hero.component';
 import InfoSectionComponent from '@components/info-section/info-section.component';
 import { ReviewCard } from '@components/review-card/review-card.component';
+import { Carousel } from '@components/carousel/carousel.component';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   standalone: true,
@@ -18,6 +20,7 @@ import { ReviewCard } from '@components/review-card/review-card.component';
     InfoSectionComponent,
     ReviewCard,
     RouterModule,
+    Carousel,
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
@@ -148,7 +151,7 @@ export default class HomePage {
       logo: 'assets/images/review_logo.png',
       description:
         '“We found great value in their technical and communication skills.”',
-      reviewer: 'Vinicio Barrantes',
+      reviewer: 'Vinicio Barrantes01',
       reviewerTitle: 'Productions Director at Baum Digital',
       reviewerLogo: 'assets/images/reviewer_logo.png',
     },
@@ -156,7 +159,7 @@ export default class HomePage {
       logo: 'assets/images/review_logo.png',
       description:
         '“We found great value in their technical and communication skills.”',
-      reviewer: 'Vinicio Barrantes',
+      reviewer: 'Vinicio Barrantes02',
       reviewerTitle: 'Productions Director at Baum Digital',
       reviewerLogo: 'assets/images/reviewer_logo.png',
     },
@@ -164,7 +167,23 @@ export default class HomePage {
       logo: 'assets/images/review_logo.png',
       description:
         '“We found great value in their technical and communication skills.”',
-      reviewer: 'Vinicio Barrantes',
+      reviewer: 'Vinicio Barrantes03',
+      reviewerTitle: 'Productions Director at Baum Digital',
+      reviewerLogo: 'assets/images/reviewer_logo.png',
+    },
+    {
+      logo: 'assets/images/review_logo.png',
+      description:
+        '“We found great value in their technical and communication skills.”',
+      reviewer: 'Vinicio Barrantes04',
+      reviewerTitle: 'Productions Director at Baum Digital',
+      reviewerLogo: 'assets/images/reviewer_logo.png',
+    },
+    {
+      logo: 'assets/images/review_logo.png',
+      description:
+        '“We found great value in their technical and communication skills.”',
+      reviewer: 'Vinicio Barrantes05',
       reviewerTitle: 'Productions Director at Baum Digital',
       reviewerLogo: 'assets/images/reviewer_logo.png',
     },
@@ -173,4 +192,22 @@ export default class HomePage {
   public get iconName(): (icon: string) => string {
     return getIconName;
   }
+
+  owlOptions: OwlOptions = {
+    startPosition: 1,
+    margin: 20,
+    center: true,
+    responsive: {
+      300: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+        margin: 0,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  };
 }

@@ -11,6 +11,10 @@
     &__head {
     }
 
+    &__img {
+      @apply w-[120px];
+    }
+
     &__body {
       &--description {
         @apply mb-10;
