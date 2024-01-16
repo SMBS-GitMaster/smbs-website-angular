@@ -21,6 +21,7 @@
     "module": "ES2022",
     "paths": {
       "@components/*": ["app/components/*"],
+      "@interfaces/*": ["app/interfaces/*"],
       "@layout/*": ["app/layout/*"],
       "@pages/*": ["app/pages/*"],
       "@shared/*": ["app/shared/*"],

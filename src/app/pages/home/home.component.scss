@@ -1,0 +1,10 @@
+@import "@styles";
+
+@layer components {
+  .hero {
+    &__card {
+      @apply lg:block;
+      @apply hidden;
+    }
+  }
+}
