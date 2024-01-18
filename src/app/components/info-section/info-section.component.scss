@@ -3,8 +3,16 @@
 @layer components {
   .section {
     &__title {
-      @apply text-primary text-[46px] font-bold uppercase mb-[25px] text-center;
-      @apply lg:text-left;
+      @apply text-primary text-[36px] font-bold uppercase mb-[25px] text-center leading-10;
+      @apply lg:text-left lg:text-[46px];
+    }
+
+    &__container {
+      @apply max-w-[1300px] mx-auto w-full;
+    }
+
+    &__clients {
+      @apply overflow-hidden;
     }
   }
 }

@@ -13,14 +13,5 @@
     &__title {
       @apply text-3xl font-bold;
     }
-
-    &.section__services__articles__item {
-      .card__body {
-        @apply h-auto;
-        @apply lg:h-[240px];
-        @apply xl:h-[200px];
-        @apply 2xl:h-[180px];
-      }
-    }
   }
 }

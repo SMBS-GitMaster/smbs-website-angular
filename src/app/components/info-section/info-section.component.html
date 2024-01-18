@@ -1,19 +1,26 @@
 <section class="section" [class]="customClass">
-  <h2 class="section__title">{{ title }}</h2>
-
-  @if (images && isMarquee){
-  <app-marquee [images]="images" />
-  } @else {
-  <ul [class]="listStyles">
-    @for (img of images; track $index) {
-    <li>
-      <picture>
-        <img [src]="img.src" [alt]="'stack ' + img.name" />
-      </picture>
-    </li>
+  <div class="section__container">
+    @if(title){
+    <h2 class="section__title">{{ title }}</h2>
     }
-  </ul>
-  }
+    <div class="section__wrapper">
+      @if (isMarquee) {
+      <app-marquee [images]="images" />
+      } 
+      
+      @if(isList) {
+        <ul [class]="listStyles">
+          @for (img of images; track $index) {
+          <li>
+            <picture>
+              <img [src]="img.src" [alt]="'stack ' + img.name" />
+            </picture>
+          </li>
+          }
+        </ul>
+      }
 
-  <ng-content />
+      <ng-content />
+    </div>
+  </div>
 </section>

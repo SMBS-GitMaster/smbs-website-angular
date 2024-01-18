@@ -8,7 +8,7 @@
     @apply 2xl:py-20 2xl:px-24;
 
     &__container {
-      @apply mx-auto max-w-[1400px] w-full;
+      @apply mx-auto max-w-[1300px] w-full;
     }
 
     &__wrapper {
@@ -34,7 +34,6 @@
       @apply md:text-4xl;
       @apply lg:text-[28px] lg:text-left;
       @apply xl:text-4xl;
-      @apply 2xl:text-4xl;
     }
 
     &__description {
@@ -42,7 +41,7 @@
       @apply lg:text-left;
     }
 
-    &__intouch {
+    &__btn {
       @apply flex justify-center items-center gap-x-14;
       @apply lg:justify-start;
     }

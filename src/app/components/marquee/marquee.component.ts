@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { ImageSlides } from '@interfaces/ImageSlides';
+import { ImageSlides } from '@models/types';
 
 @Component({
   selector: 'app-marquee',

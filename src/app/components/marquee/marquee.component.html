@@ -1,15 +1,15 @@
 <div class="marquee">
   <div class="marquee-content">
     @for (item of images; track $index) {
-    <div class="marquee-item">
-      <img [src]="item.src" [alt]="item.name + ' image'" />
-    </div>
+      <div class="marquee-item">
+        <img [src]="item.src" [alt]="item.name + ' image'" />
+      </div>
     }
-    <div class="ml-10"></div>
+    
     @for (item of images; track $index) {
-    <div class="marquee-item">
-      <img [src]="item.src" [alt]="item.name + ' image'" />
-    </div>
+      <div class="marquee-item">
+        <img [src]="item.src" [alt]="item.name + ' image'" />
+      </div>
     }
   </div>
 </div>

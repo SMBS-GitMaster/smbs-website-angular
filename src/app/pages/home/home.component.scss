@@ -10,58 +10,16 @@
 
   .content {
     @apply py-[50px] px-10;
-    @apply lg:px-8;
-    @apply xl:px-16;
+    @apply lg:px-12;
+    @apply xl:px-20;
     @apply 2xl:px-24;
 
     &__container {
-      @apply max-w-[1400px] w-full mx-auto;
+      @apply max-w-[1300px] w-full mx-auto;
     }
 
     &__wrapper {
       @apply flex flex-col gap-y-[60px];
-    }
-  }
-
-  .section {
-    &__services {
-      &__description {
-        @apply flex flex-col items-center justify-center mb-10;
-        @apply lg:flex-row lg:justify-between lg:items-start lg:h-[180px];
-
-        &--text {
-          @apply max-w-[856px] w-full;
-
-          p {
-            @apply text-[28px] font-bold mb-10 leading-[38px] text-center;
-            @apply lg:leading-[40px] lg:text-left;
-            @apply xl:text-wrap xl:text-[30px] xl:leading-9;
-          }
-
-          span {
-            @apply text-xl mb-10 block text-center;
-            @apply lg:mb-0 lg:text-left;
-          }
-        }
-      }
-
-      &__picture {
-        @apply w-[400px] h-[260px] bg-cover object-contain;
-        @apply lg:-translate-y-20 lg:w-[341.74px] lg:h-[220px];
-      }
-
-      &__articles {
-        @apply grid grid-cols-1 gap-y-10 py-12;
-        @apply lg:grid-cols-2 lg:gap-0 lg:p-0;
-        @apply xl:gap-x-6;
-
-        &__item {
-          &--text {
-            @apply text-xl text-center;
-            @apply lg:text-left;
-          }
-        }
-      }
     }
   }
 }

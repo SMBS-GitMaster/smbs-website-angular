@@ -8,7 +8,7 @@
     @apply 2xl:px-24;
 
     &__container {
-      @apply mx-auto max-w-[1400px] w-full;
+      @apply max-w-[1300px] w-full mx-auto;
     }
 
     &__logo {

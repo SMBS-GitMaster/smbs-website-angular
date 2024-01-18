@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, booleanAttribute } from '@angular/core';
 import { MarqueeComponent } from '@components/marquee/marquee.component';
-import { ImageSlides } from '@interfaces/ImageSlides';
+import { ImageSlides } from '@models/types';
 
 @Component({
   selector: 'app-info-section',
@@ -15,6 +15,7 @@ export default class InfoSectionComponent {
   @Input() title = '';
   @Input() images: ImageSlides[] = [];
   @Input({ transform: booleanAttribute }) isMarquee = false;
+  @Input({ transform: booleanAttribute }) isList = false;
 
   @Input() listStyles = '';
 }

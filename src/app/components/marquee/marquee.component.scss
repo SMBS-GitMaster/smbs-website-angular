@@ -1,34 +1,43 @@
 .marquee {
   overflow: hidden;
+  width: 100%;
 
   &-content {
-    display: flex;
     animation: scrolling 12s linear infinite;
+    display: flex;
+    gap: 55px;
   }
 
   &-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 0 0 10rem;
-    margin: 0 1vw;
+    flex: 0 0 18rem;
 
-    picture {
+    img {
       display: block;
+      object-fit: scale-down;
       width: 100%;
     }
-
-    &--duplicate {
-      display: none;
-    }
   }
 }
 
+// @media (width >= 1400px) {
 @keyframes scrolling {
   0% {
-    transform: translateX(0vw);
+    transform: translateX(0%);
   }
   100% {
-    transform: translatex(-146.4vw);
+    transform: translatex(-132%);
   }
 }
+// }
+
+// @media (1300px <= width <= 1399px) {
+//   @keyframes scrolling {
+//     0% {
+//       transform: translateX(0%);
+//     }
+//     100% {
+//       transform: translatex(-125.5%);
+//     }
+//   }
+// }
